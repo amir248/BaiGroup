@@ -86,6 +86,10 @@ body > main > header > div > div > button{
     border-image-source: linear-gradient(262.63deg, rgba(235, 107, 57, 0.8) -37.6%, rgba(240, 170, 60, 0.8) 86.93%);
     color:white;   
 }
+body > main > header > div >  div > button:hover{
+    transition: 1s ease-out;
+    background: linear-gradient(91.62deg, rgba(255, 117, 62, 0.9) -2.51%, rgba(255, 181, 63, 0.9) 125.4%);
+}
 body > main > header > nav{
     width:100%;
     max-width:1500px;
@@ -123,6 +127,9 @@ body > main > header > nav > ul > li:nth-child(1){
 body > main > header > nav > ul > li:nth-child(4){
     min-width: 200px;
 }
+body > main > header > nav > ul > li:nth-child(4){
+    min-width:240px;
+}
 body > main > header > nav > ul > li:nth-child(5){
     min-width: 200px;
 }
@@ -145,6 +152,11 @@ body > main > header > nav > ul > li:nth-child(7){
     font-family:Geologica;
     font-weight: 700;
 }
+@media(max-width:500px){
+    .title > h1{
+        font-size:33px;
+    }
+}
 .title > p{
     font-size:24px;
     font-family: Montserrat;
@@ -155,7 +167,7 @@ body > main > header > nav > ul > li:nth-child(7){
     background: linear-gradient(90deg, #78B950 0%, #50B9AF 100%);
     width:100%;
     max-width:1084px;
-    height: calc(318px + 84px);
+    min-height: calc(318px + 84px);
     text-transform:none;
     display:flex;
     justify-content: center;
@@ -214,6 +226,11 @@ body > main > header > nav > ul > li:nth-child(7){
     justify-content: center;
     align-items: center;
 }
+@media(max-width:500px){
+    .greenBlock > div > div > div{
+        flex-wrap:wrap;
+    }
+}
 .greenBlock > div > div > div > p{
     width:100%;
     max-width:213px;
@@ -233,6 +250,10 @@ body > main > header > nav > ul > li:nth-child(7){
     height:41px;
     /* margin-left:15px; */
     border-radius: 17px;
+    color:white;
+}
+.greenBlock > div > div > div > button:hover{
+    background: linear-gradient(91.62deg, rgba(255, 116, 61, 0.9) -2.51%, rgba(255, 181, 63, 0.9) 125.4%);
 }
 .greenBlock > section{
     width:100%;
@@ -365,6 +386,7 @@ article > section > h2{
     height:50px;
     border-radius:7px;
     margin:3%;
+    overflow: hidden;
 }
 #showAll::before{
     content: '';
@@ -375,6 +397,7 @@ article > section > h2{
     background-color: gray;
     right:190px;
     top:15px;
+    overflow:hidden;
 }
 #showAll::after{
     content: '';
@@ -409,14 +432,24 @@ section:nth-child(3){
     align-items: center;
     flex-wrap: wrap;
 }
-
+.tour > img{
+    width:100%;
+    max-width:771px;
+}
 .hotToursFromAlmaty{ 
     display:flex;
     flex-direction:column;
     max-width:1570px;
+    width:100%;
 }
 .hotToursFromAlmaty > form > div{
     display:flex;
+    width:100%;
+}
+@media(max-width:700px){
+    .hotToursFromAlmaty > form > div{
+        flex-wrap: wrap;
+    }
 }
 .hotToursFromAlmaty > form{
     display:flex;
@@ -432,22 +465,30 @@ section:nth-child(3){
     font-family:Montserrat;
     font-size:18px;
     font-weight: 300;
+    width:100%;
 }
 .hotToursFromAlmaty > form > div > div{
     display:grid;
     background: white;
     border-radius:17px;
     padding:25px;
+    width:100%;
 }
 .hotToursFromAlmaty > form > div > div > select{
     background: none;
     border:none;
+    width:100%;
 }
 .hotToursFromAlmaty > form > div:nth-child(2){
     width:100%;
     margin-top:3%;
     margin-bottom:3%;
-
+    width:100%;
+}
+@media(max-width:700px){
+    .hotToursFromAlmaty > form > div:nth-child(2){
+        flex-wrap: wrap;
+    }
 }
 .hotToursFromAlmaty > form > div:nth-child(2) > p{
     display:flex;
@@ -457,6 +498,8 @@ section:nth-child(3){
     background-color: white;
     width:154px;
     height:50px;
+    width:100%;
+    flex-wrap:wrap;
 }
 form > div:nth-child(2) > p:nth-child(1){
     background: linear-gradient(40.57deg, #4158B2 33.7%, #6496FF 146.19%);
@@ -468,4 +511,121 @@ form > div:nth-child(2) > p:nth-child(1){
     justify-content: center;
     align-items: center;
     flex-wrap:wrap;
+}
+body > main > article > section:nth-child(5){
+    background:url(img/Group\ 73.svg);
+}
+.tourOfKazahstan > h2{
+    width:100%;
+    max-width:1500px;
+    min-height: 70px;
+    text-align: start;
+    font-size: 42px;
+    font-weight: 700;
+    font-family: Geologica;
+}
+.tourOfKazahstan{
+    display:flex;
+    flex-direction: column;
+}
+.tourOfKazahstan > div{
+    width:100%;
+    max-width: 1555px;
+    min-height:897px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.tourOfKazahstan > div > img{
+    width:100%;
+    max-width:517px;
+}
+.tourOfKazahstan > div > img:nth-child(2){
+    width:100%;
+    max-width:993px;
+}
+
+section:nth-child(6){
+    background: #DDE4EE;
+    width: 100%;
+    max-width:1920px;
+    min-height:1922px;
+}
+.forBussiness{
+    display:flex;
+    flex-direction: column;
+}
+.forBussiness > div{
+    width:100%;
+    max-width:1920px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.forBussiness > div > h2{
+    width:100%;
+    max-width:1500px;
+    text-align: start;
+}
+.forBussiness > div > img{
+    width:100%;
+    max-width: 740px;
+}
+.forBussiness > div > img:nth-child(4), .forBussiness > div > img:nth-child(5), .forBussiness > div > img:nth-child(6){
+    max-width:487px;
+    width: 100%;
+}
+.forBussiness > div > img:nth-child(2){
+    margin-right:1%;
+}
+.forBussiness > div > img:nth-child(3){
+    margin-left:1%;
+}
+.forBussiness > div > img:nth-child(5){
+    margin:1%;
+}
+.forBussiness > div > img:nth-child(7){
+    width: 100%;
+    max-width:1533px;
+}
+.forBussiness > div > div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    max-width:1500px;
+    width:100%;
+    background: linear-gradient(40.57deg, #4158B2 33.7%, #6496FF 146.19%);
+    min-height:210px;
+    border-radius:7px;
+    color:white;
+}
+.forBussiness > div > div > div{
+    color:white;
+    width: 100%;
+    max-width:685px;
+    min-height:150px;
+}
+.forBussiness > div > div > form{
+    width: 100%;
+    max-width:639px;
+    min-height:48px;
+}
+.forBussiness > div > div > form > input{
+    height:48px;
+    max-width:330px;
+    /* width:100%; */
+    border-radius:7px;
+}
+.forBussiness > div > div > form > button{
+    width:249px;
+    height:48px;
+    background: linear-gradient(91.62deg, rgba(235, 107, 57, 0.9) -2.51%, rgba(240, 170, 60, 0.9) 125.4%);
+    border-radius:7px;
+}
+.additionalServices{
+    display:flex;
+    
 }
